@@ -77,9 +77,11 @@
     <td style="width:70%">
     <p style="font-size:16px;"><b>1.基于直接法的多相机组合式全景相机SLAM算法(负责/在研)</b></p>
     <!-- <p>•	提出结合直接法的SLAM</p> -->
-    <p style="text-indent:2em">•	推导全景成像的光度误差函数以及Jacobian矩阵</p>
-    <p style="text-indent:2em">•	球面极线搜索，球面坐标更新逆深度等公式推导</p>
-    <p style="text-indent:2em">•	对DSO系统构架的整体修改</p>
+    <p style="text-indent:2em">•  基于多镜头组合式全景相机成像模型，对DSO相机模型进行修改，
+      对光度仿射变换参数设置做出调整</p>
+    <p style="text-indent:2em">•	推导全景成像的光度误差函数以及Jacobian矩阵，修改tracking中
+      位姿优化优化模块，以及滑动窗口优化模块</p>
+    <p style="text-indent:2em">•	球面极线搜索，球面坐标逆深度更新等公式推导</p>
     </td>
 
     <td style="widows: 30px">
@@ -94,11 +96,11 @@
       <p style="text-indent:2em">•	使用通用相机模型，等距投影模型对单鱼眼相机进行内参标定</p>
       <p style="text-indent:2em">•	三维标定场进行多相机外参标定，并使用ceres进行内外参整体优化</p>
       <p style="text-indent:2em">•	扩展Pano-SLAM部分鱼眼相机模型(增加通用相机投影模型)</p>
-      <p style="text-indent:2em"><a href="https://github.com/jiangfanfly">code</a></p>  
+      <p style="text-indent:3em"><a href="https://github.com/jiangfanfly">code</a></p>  
     </td>
   
       <td style="widows: 30%">
-        <img src="images/multi-cam-calibration.png" width="100%">   
+        <img src="images/multi-cam-calibration.jpg" width="100%">   
       </td>
   </tr>
 
@@ -106,10 +108,10 @@
     <td style="width:70%">
       <p style="font-size:16px;"><b>3.基于ORB-SLAM的多相机组合式全景相机SLAM算法(参与)</b></p>
       <!-- <p>•	提出结合直接法的SLAM</p> -->
-      <p style="text-indent:2em">••	理论部分主要负责球面EPnP公式的推导，球面Jacobian矩阵的推导</p>
-      <p style="text-indent:2em">•	三维标定场进行多相机外参标定，并使用ceres进行内外参整体优化</p>
-      <p style="text-indent:2em">•	代码上负责后端优化g2o部分自定义节点与边</p>
-      <p style="text-indent:2em"><a href="http://study.rsgis.whu.edu.cn/pages/download/panslam.html">code</a></p>
+      <p style="text-indent:2em">•  与师兄一起明确ORB-SLAM修改模块进行分工</p>
+      <p style="text-indent:2em">•	理论部分负责球面EPnP公式的推导，球面Jacobian矩阵的推导</p>
+      <p style="text-indent:2em">•	代码上负责g2o部分自定义节点与边，后端优化部分</p>
+      <p style="text-indent:3em"><a href="http://study.rsgis.whu.edu.cn/pages/download/panslam.html">code</a></p>
       </td>
   
       <td style="widows: 30%">
@@ -124,11 +126,11 @@
       <p style="text-indent:2em">•	完成包括大地测量坐标系，地理坐标系，投影坐标系的转换工具</p>
       <p style="text-indent:2em">•	完成简易导线平差与水准网平差程序</p>
       <p style="text-indent:2em">•	完成沉降秩亏自由网平差，粗差探测</p>
-      <p style="text-indent:2em"><a href="https://github.com/jiangfanfly/geomatics_toolbox">code</a></p>  
+      <p style="text-indent:3em"><a href="https://github.com/jiangfanfly/geomatics_toolbox">code</a></p>  
       </td>
   
       <td style="widows: 30%">
-        <img src="images/大地测量坐标转换tool.png" width="80%">   
+        <img src="images/大地测量坐标转换tool.jpg" width="80%">   
       </td>
   </tr>
 
@@ -139,11 +141,11 @@
       <p style="text-indent:2em">•	精确设定设计坐标系的作用区域</p>
       <p style="text-indent:2em">•	设计满足**煤矿井下测量综合变形要求优于1/80000的独立坐标系统</p>
       <p style="text-indent:2em">•	设计坐标系统采用等角投影</p>
-      <p style="text-indent:2em"><a href="https://github.com/jiangfanfly/independent_coordinate_system">code</a></p>  
+      <p style="text-indent:3em"><a href="https://github.com/jiangfanfly/independent_coordinate_system">code</a></p>  
       </td>
   
       <td style="widows: 30%">
-        <img src="images/独立坐标系设计.png" width="80%">   
+        <img src="images/独立坐标系设计.jpg" width="80%">   
       </td>
   </tr>
 
